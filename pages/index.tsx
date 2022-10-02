@@ -157,7 +157,7 @@ const Home: NextPage = () => {
         <div className={styles.ImgBg2Move} />
         <div className={styles.MintContainer}>
             <h1>In The Clouds</h1>
-            <p>A "Legacy" Art Collection by @WGMIPsycho</p>
+            <p>A &quot;Legacy&quot; Art Collection by @WGMIPsycho</p>
             {errorMessage? (
             <>
             <div className={styles.ErrorMessage}> 
