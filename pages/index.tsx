@@ -52,7 +52,7 @@ const Home: NextPage = () => {
 
 
 
-  // smart contract connection
+  
   const address = useAddress();
   const connectwithMetamask = useMetamask();
   const isMismatch = useNetworkMismatch();
@@ -161,7 +161,7 @@ const Home: NextPage = () => {
             {errorMessage? (
             <>
             <div className={styles.ErrorMessage}> 
-              {/* <div className={styles.ErrorImg} /> */}
+             
             
               <p>Error! Try Again</p>
             </div>
@@ -250,9 +250,7 @@ const Home: NextPage = () => {
       </>
 
     )}
-      {/* </div>
-      </div>
-      </div>  */}
+      
     </div>
     </div>
     </>
