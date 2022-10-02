@@ -51,8 +51,8 @@ const Home: NextPage = () => {
   }, []);
 
 
+  //smart contract integration
 
-  
   const address = useAddress();
   const connectwithMetamask = useMetamask();
   const isMismatch = useNetworkMismatch();
