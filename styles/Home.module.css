@@ -8,7 +8,10 @@
     position:relative;
     z-index:0;
     overflow:hidden;
+    
 }
+
+
 
 .HeroBg{
   position: absolute;
@@ -29,9 +32,11 @@
   height: 100%;
   -o-object-fit:cover;
   object-fit:cover;
-  background-image: url(../public/CloudWorldBg.png);
+  background-image: url(../public/pexels2.png);
   background-size: cover;
   background-position: center;   
+  top:-80px;
+  
 }
 
 .ImgBg1{
@@ -173,7 +178,7 @@
 
 
 .nav{
-  background:#000;
+  background:transparent;
     
     height: 60px; 
     margin-top: -60px;
@@ -185,6 +190,7 @@
     z-index: 10;
     position:sticky;
     transition: 0.8s all ease;
+    
 }
 
 .navbarContainer{
@@ -438,9 +444,10 @@
   left: 0;
   -o-object-fit:cover;
   object-fit:cover;
-  background-image: url(../public/CloudWorldBg.png);
+  background-image: url(../public/pexels2.png);
   background-size: cover;
   background-position: center; 
+  top:-80px;
   
 }
 
