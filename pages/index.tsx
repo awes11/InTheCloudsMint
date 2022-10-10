@@ -22,7 +22,7 @@ const Home: NextPage = () => {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    const target = new Date("10/10/2022 19:45:00");
+    const target = new Date("10/12/2022 20:00:00");
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -63,7 +63,7 @@ const Home: NextPage = () => {
   const [errorMessage, setErrorMessage] = useState(false);
   const [successMint, setSuccessMint] = useState(false);
 
-  const signatureDrop = useSignatureDrop("0x0e1109D7884D320449142927121bF6F819Ca8F2E");
+  const signatureDrop = useSignatureDrop("0x581AdC026952bE59B448939F1368AAAB1Eb9601f");
 
   
   function Loader(){
