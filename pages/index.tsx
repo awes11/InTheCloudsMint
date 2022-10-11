@@ -22,7 +22,7 @@ const Home: NextPage = () => {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    const target = new Date("10/11/2022 10:20:00");
+    const target = new Date("10/13/2022 22:00:00");
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -222,7 +222,7 @@ const Home: NextPage = () => {
         </>
     ):(
       <>
-        <div className={styles.TimeSection}>
+        {/* <div className={styles.TimeSection}>
         <div className={styles.timerwrapper}>
             <div className={styles.timerinner}>
               <div className={styles.timersegment}>
@@ -246,7 +246,7 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-          </div>
+          </div> */}
       </>
 
     )}
