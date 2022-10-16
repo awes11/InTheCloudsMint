@@ -120,6 +120,29 @@ const Home: NextPage = () => {
 
   }
 
+  async function claim5() {
+    if (!address) {
+      connectwithMetamask();
+      return;
+    }
+
+    if (isMismatch) {
+      switchNetwork?.(ChainId.Mainnet);
+      return;
+    }
+
+    try {
+      const tx = await signatureDrop?.claimTo(address, 5);
+      
+      setSuccessMint(true);
+    } catch (error: any) {
+      alert(error?.message);
+      setErrorMessage(true);
+    }
+
+
+  }
+
 
 
   return (
@@ -184,6 +207,7 @@ const Home: NextPage = () => {
         <div className={styles.MintButtonContainer}>
           <button className={styles.buttonStyle} onClick={() => {claim() ; Loader()}} >Mint1</button>
           <button className={styles.buttonStyle} onClick={() => {claim2() ; Loader()}}>Mint2</button>
+          <button className={styles.buttonStyle} onClick={() => {claim5() ; Loader()}}>Mint5</button>
             
 
           </div>

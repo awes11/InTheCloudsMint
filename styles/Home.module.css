@@ -326,23 +326,24 @@
 
 .MintButtonContainer{
   align-content: bottom;
-  max-width: 400px;
-  height: 300px;
+  max-width: 600px;
+  height: 200px;
      margin: 0 auto;
      display: grid;
-     grid-template-columns: 1fr 1fr;
+     grid-template-columns: 1fr 1fr 1fr;
      align-items: center;
-     grid-gap: 30px;
-     padding: 0px 50px;
+     grid-gap: 50px;
+     padding: 0px 10px;
      overflow:hidden;
      animation: MintInfoAnim 5s none;
      padding-top: 20px;
+     justify-content: center;
 
 }
 
 @media screen and (max-width: 768px) {
   .MintButtonContainer{grid-template-columns: 1fr}
-  .MintButtonContainer{height: 180px;}
+  .MintButtonContainer{height: 380px;}
 
   
   
