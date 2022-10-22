@@ -1,4 +1,5 @@
-import { useAddress, useMetamask, useNetwork, useNetworkMismatch, useSignatureDrop } from "@thirdweb-dev/react";
+import { useAddress, useMetamask, useNetwork, useNetworkMismatch, useSignatureDrop} from "@thirdweb-dev/react";
+
 import { ChainId} from "@thirdweb-dev/sdk";
 
 import type { NextPage } from "next";
@@ -22,7 +23,7 @@ const Home: NextPage = () => {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    const target = new Date("10/9/2022 22:00:00");
+    const target = new Date("10/24/2022 22:00:00");
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -62,6 +63,10 @@ const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
   const [successMint, setSuccessMint] = useState(false);
+
+  
+
+  
 
   const signatureDrop = useSignatureDrop("0x581AdC026952bE59B448939F1368AAAB1Eb9601f");
 
