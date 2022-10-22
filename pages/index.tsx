@@ -1,4 +1,4 @@
-import { useAddress, useMetamask, useNetwork, useNetworkMismatch, useSignatureDrop, useContract} from "@thirdweb-dev/react";
+import { useAddress, useMetamask, useNetwork, useNetworkMismatch, useSignatureDrop} from "@thirdweb-dev/react";
 
 import { ChainId} from "@thirdweb-dev/sdk";
 
@@ -69,8 +69,7 @@ const Home: NextPage = () => {
   
 
   const signatureDrop = useSignatureDrop("0x581AdC026952bE59B448939F1368AAAB1Eb9601f");
-  //const { contract } = useContract("0x581AdC026952bE59B448939F1368AAAB1Eb9601f", "signature-drop")
-  //const signatureDrop = useContract("0x581AdC026952bE59B448939F1368AAAB1Eb9601f", "signature-drop").contract;
+  
 
   
 
