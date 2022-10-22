@@ -1,4 +1,4 @@
-import { useAddress, useMetamask, useNetwork, useNetworkMismatch, useSignatureDrop} from "@thirdweb-dev/react";
+import { useAddress, useMetamask, useNetwork, useNetworkMismatch, useSignatureDrop, useContract} from "@thirdweb-dev/react";
 
 import { ChainId} from "@thirdweb-dev/sdk";
 
@@ -12,7 +12,7 @@ import Head from "next/head";
 
 
 
-
+  
 
 const Home: NextPage = () => {
 
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    const target = new Date("10/24/2022 22:00:00");
+    const target = new Date("10/20/2022 22:00:00");
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -69,6 +69,10 @@ const Home: NextPage = () => {
   
 
   const signatureDrop = useSignatureDrop("0x581AdC026952bE59B448939F1368AAAB1Eb9601f");
+  //const { contract } = useContract("0x581AdC026952bE59B448939F1368AAAB1Eb9601f", "signature-drop")
+  //const signatureDrop = useContract("0x581AdC026952bE59B448939F1368AAAB1Eb9601f", "signature-drop").contract;
+
+  
 
   
   function Loader(){
@@ -77,6 +81,9 @@ const Home: NextPage = () => {
     
     return;
   }
+
+
+  
 
   async function claim() {
     if (!address) {
